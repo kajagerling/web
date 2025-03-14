@@ -1,0 +1,321 @@
+@import url('https://fonts.googleapis.com/css2?family=Gochi+Hand&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Solitreo&display=swap');
+
+* {
+    margin: 0px;
+    font-family:'inter','Franklin Gothic Medium';
+    font-variant-caps: normal;
+    color:aliceblue;
+    font-size: 18pt;
+    text-decoration: none;
+}
+
+h1 {
+    font-weight: bolder;
+    font-size: 130pt;
+}
+
+
+
+
+
+
+
+.menu {
+    display: inline-grid;
+    grid-template-columns: repeat(3,1fr);
+    background-color: black;
+    color:azure;
+    min-width: 100%;
+    max-height: 120px;
+}
+
+.menu ul {
+    min-width: 20%;
+    padding: 20px;
+    place-items: center;
+    display: inline-flex;
+    list-style-type: none;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20%;
+    padding-right: 20%;
+    background-color: black;
+
+}
+
+.menu li {
+    display: inline;
+    padding: 10px;
+    font-size: 28pt;
+    font-weight: bold;
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+    place-items: center;
+}
+
+
+
+.menu a {
+    justify-content: center;
+    align-items: center;
+    place-items: center;
+}
+
+.logodiv {
+    display: inline-flex;
+    max-height: 100px;
+    place-items: center;
+    justify-content: center;
+    align-items: center;
+    padding:10px;
+
+
+}
+
+.logodiv #giraffe {
+    max-height: 100px;
+    padding-left: 200px;
+}
+
+
+
+
+
+
+
+
+.header {
+    display: grid;
+    position: relative;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+    padding: 20px;
+    place-items: center;
+    background-image: url("img/bg_mainsplat.png");
+    background-size: cover;
+    min-height: 900px;
+    background-color: aliceblue;
+    padding: 80px;
+}
+
+.header::before {
+    content: ""; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image:url("img/bg_bigsplat.png"); 
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: var(--overlay-offset, 0px) center;
+    pointer-events: none; 
+    z-index: 2; 
+}
+
+
+.scrolldiv {
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#scroll {
+    max-width: 300px;
+}
+
+#scroll:hover {
+    max-width: 350px;
+    transition-duration: 0.5s;
+}
+
+
+
+
+
+
+
+
+
+
+
+.trenner {
+    min-height: 40px;
+    background-color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.main {
+    padding: 200px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    padding: 20px;
+    place-items: center;
+    background-color:black;
+    border-left: 300px solid black;
+    border-right: 300px solid black;
+    border-bottom: 150px solid black;
+    justify-content: center;
+    overflow: hidden;
+}
+
+
+
+.normal {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 300px;
+    max-width: 500px;
+    text-align: center;
+}
+
+.normal img {
+    width: 600px;
+    padding: 20px;
+    border-radius: 10%;
+}
+
+.intro {
+    grid-column: span 2;
+}
+
+h2 {
+    font-family:'inter','Frankling Gothic Medium';
+    font-variant-caps:all-petite-caps;
+    color:aliceblue;
+    font-size: 34pt;
+    font-weight: 600;
+
+}
+
+
+h3 {
+
+    font-family:'inter','Frankling Gothic Medium';
+    font-variant-caps: normal;
+    color:aliceblue;
+    font-size: 20pt;
+    font-weight: 600;
+}
+
+p {
+    font-family: 'inter';
+    font-variant-caps: Normal;
+    color:aliceblue;
+    font-size: 16pt;
+    font-weight: normal;
+}
+
+
+
+
+
+
+.auswahl_fenster {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    border-radius: 10px;
+    padding: 20px;
+    min-height: 900px;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+    transition: 1s ease;
+    border: black solid 5px;
+}
+
+.auswahl_fenster:hover {
+    scale: 103%;
+    background-color: black;
+    border: aliceblue solid 5px;
+    transition-duration: 0.5s;
+}
+
+
+.auswahl_fenster p,h2 {
+    padding: 30px;
+}
+
+
+
+
+
+
+
+.auswahlbild {
+    max-width: 500px;
+    max-height: 300px;
+    overflow: hidden;
+    border-radius: 5px;
+    object-fit: contain;
+
+}
+
+.auswahlbild img {
+    width: 100%;          
+    height: 100%;         
+    object-fit: cover;
+}
+
+.button1 {
+    width: 120px;
+    padding:40px;
+    transition: 0.1s ease;
+}
+
+.button1:hover {
+    color:aqua;
+    scale: 110%;
+    transition-duration: 0.2s;
+    transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+
+
+
+.trenner2 {
+    background-color: aliceblue;
+    height: 50px;
+    width: 100%;
+}
+
+.teiler2 {
+    position: relative;
+    height: 800px;
+    background-color: aliceblue;
+    width: 100%;
+    overflow: hidden;
+}
+
+.teiler2::before {
+    content: ""; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image:url("img/.png ");
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: var(--overlay-offset, 0px) center;
+    pointer-events: none; 
+    z-index: 2;
+    overflow: hidden;
+}
